@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Developer Portfolio</title>
@@ -700,6 +699,41 @@
         section:nth-child(odd) {
             background: var(--dark);
         }
+
+        /* ==== Resume Section ==== */
+#resume {
+  background: var(--card-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 5rem 2rem;
+  border-radius: 1rem;
+  margin: 4rem auto;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+#resume p {
+  color: var(--secondary-text);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.download-btn {
+  display: inline-block;
+  background: var(--gradient);
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.4);
+}
+
     </style>
 </head>
 <body>
@@ -718,6 +752,7 @@
                 <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
                 <li><a href="#certifications" onclick="closeMenu()">Certifications</a></li>
                 <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#Resume" onclick="closeMenu()">Resume</a></li>
                 <li><a href="#connect" onclick="closeMenu()">Connect</a></li>
             </ul>
         </div>
@@ -741,8 +776,8 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>Hello! I'm a passionate web developer with expertise in creating dynamic and responsive web applications. My journey in web development has equipped me with a comprehensive skill set spanning from front-end technologies to back-end development.</p>
-                <p>I specialize in building modern, user-friendly websites using HTML5, CSS3, JavaScript, and PHP. My experience extends to working with cutting-edge AI tools and Large Language Models (LLMs), allowing me to integrate intelligent features into web applications.</p>
+                <p>Hello! I'm Akshat Chamoli and i'm  a passionate web developer with expertise in creating dynamic and responsive web applications. My journey in web development has equipped me with a comprehensive skill set spanning from front-end technologies to back-end development.</p>
+                <p>I specialize in building modern, user-friendly websites using HTML5, CSS3, JavaScript, Reactjs and PHP. My experience extends to working with cutting-edge AI tools and Large Language Models (LLMs), allowing me to integrate intelligent features into web applications.</p>
                 <p>I'm committed to writing clean, efficient code and staying updated with the latest web development trends and best practices. My goal is to create seamless digital experiences that not only look great but also perform exceptionally.</p>
             </div>
             <div class="about-image">
@@ -770,13 +805,13 @@
                 <h3><i class="fas fa-school"></i> Higher Secondary</h3>
                 <p class="institution">Science Stream (PCM) </p>
                 <p class="institution">CBSE Board</p>
-                <p class="year">2016 - 2018</p>
+                <p class="year">2020 - 2021</p>
                 <p>The PCM stream — Physics, Chemistry, and Mathematics — focuses on the scientific and mathematical foundations of the physical world and technological applications.</p>
             </div>
             <div class="education-card">
                 <h3><i class="fas fa-book"></i> Secondary School</h3>
                 <p class="institution">CBSE Board</p>
-                <p class="year">2015 - 2016</p>
+                <p class="year">2018 - 2019</p>
                 <p>Completed with excellent grades. Developed early interest in technology and programming.</p>
             </div>
         </div>
@@ -793,10 +828,10 @@
                             <h3>Full Stack Web Developer Intern</h3>
                             <p class="internship-company">Rockford Softsol Computer academy & Training centre.</p>
                         </div>
-                        <p class="internship-duration">June 2025 - Septembe 2025</p>
+                        <p class="internship-duration">May 2025 - Septembe 2025</p>
                     </div>
                     <ul>
-                        <li>Developed responsive web applications using HTML5, CSS3, and JavaScript</li>
+                        <li>Developed responsive web applications using HTML5, CSS3, and JavaScript and Reactjs</li>
                         <li>Implemented RESTful APIs using PHP and integrated with MySQL databases</li>
                         <li>Collaborated with senior developers on client projects and code reviews</li>
                         <li>Improved website performance by 40% through optimization techniques</li>
@@ -824,8 +859,8 @@
                         
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                        <a href="https://akshat-2711.github.io/E-comm-website/" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/Akshat-2711/E-comm-website.git" class="project-link"><i class="fab fa-github"></i> Source Code</a>
                     </div>
                 </div>
             </div>
@@ -845,8 +880,8 @@ It helps users organize, track, and prioritize daily tasks efficiently through a
                         <span class="tech-badge">React</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                        <a href="https://akshat-2711.github.io/Task-master-pro/" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/Akshat-2711/Task-master-pro.git" class="project-link"><i class="fab fa-github"></i> Source Code</a>
                     </div>
                 </div>
             </div>
@@ -864,69 +899,14 @@ It helps users organize, track, and prioritize daily tasks efficiently through a
                         <span class="tech-badge">CSS3</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                        <a href="https://akshat-2711.github.io/PORTFOLIO/" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/Akshat-2711/PORTFOLIO.git" class="project-link"><i class="fab fa-github"></i> Source Code</a>
                     </div>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-newspaper"></i>
-                </div>
-                <div class="project-content">
-                    <h3>News Aggregator App</h3>
-                    <p>Real-time news aggregation platform fetching articles from multiple sources with category filtering.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">REST API</span>
-                        <span class="tech-badge">HTML5</span>
-                        <span class="tech-badge">CSS3</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-tasks"></i>
-                </div>
-                <div class="project-content">
-                    <h3>Task Management Tool</h3>
-                    <p>Collaborative task manager with drag-and-drop interface, user authentication, and real-time updates.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">PHP</span>
-                        <span class="tech-badge">MySQL</span>
-                        <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">AJAX</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <div class="project-content">
-                    <h3>Analytics Dashboard</h3>
-                    <p>Interactive data visualization dashboard with charts, graphs, and real-time metrics tracking.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">Chart.js</span>
-                        <span class="tech-badge">PHP</span>
-                        <span class="tech-badge">MySQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+            
+            
+                
     </section>
 
     <!-- Certifications Section -->
@@ -937,13 +917,23 @@ It helps users organize, track, and prioritize daily tasks efficiently through a
                 <i class="fas fa-certificate"></i>
                 <h3>Web Development</h3>
                 <p>Full Stack Development</p>
+                <a href="Course certificate.jpeg" class="Get-Certificate"><i class="fas fa-external-link-alt"></i>Get-Certificate</a>
             </div>
             
+            <div class="cert-badge">
+                <i class="fas fa-certificate"></i>
+                <h3>Web Development </h3>
+                <p>Full Stack Web Development Internship</p>
+                <a href="Internship Certificate.jpeg" class="Get-Certificate"><i class="fas fa-external-link-alt"></i>Get-Certificate</a>
+            </div>
+            </div>
             
             <div class="cert-badge">
                 <i class="fas fa-brain"></i>
                 <h3>AI Tools & LLM Integration</h3>
                 <p>Ai & Language Models</p>
+                <a href="" class="Get-Certificate"><i class="fas fa-external-link-alt"></i>Get-Certificate</a>
+            </div>
             </div>
             
             
@@ -980,6 +970,16 @@ It helps users organize, track, and prioritize daily tasks efficiently through a
                         <div class="skill-progress" data-width=""></div>
                     </div>
                 </div>
+
+<div class="skill-item">
+                    <div class="skill-name">
+                        <span>React js</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width=""></div>
+                    </div>
+                </div>
+
                 <div class="skill-item">
                     <div class="skill-name">
                         <span>Responsive Design</span>
@@ -1018,7 +1018,7 @@ It helps users organize, track, and prioritize daily tasks efficiently through a
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">
-                        <span>Server Management</span>
+                        <span></span>
                     </div>
                     <div class="skill-bar">
                         <div class="skill-progress" data-width=""></div>
@@ -1030,16 +1030,7 @@ It helps users organize, track, and prioritize daily tasks efficiently through a
                         <div class="skill-progress" data-width=""></div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-name">
-                        <span>Server Management</span>
-                        <span></span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width=""></div>
-                    </div>
-                </div>
-            </div>
+                
 
             <div class="skill-category">
                 <h3><i class="fas fa-brain"></i> AI & Modern Tools</h3>
@@ -1054,7 +1045,7 @@ It helps users organize, track, and prioritize daily tasks efficiently through a
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">
-                        <span>LLMs (GPT, Claude)</span>
+                        <span>LLMs (GPT, Claude, Cursor etc)</span>
                         <span></span>
                     </div>
                     <div class="skill-bar">
@@ -1083,6 +1074,24 @@ It helps users organize, track, and prioritize daily tasks efficiently through a
         </div>
     </section>
 
+    <!-- ===== Resume Section ===== -->
+<section id="resume">
+  <h2 class="section-title">Resume</h2>
+
+  <div class="resume-container">
+    <div class="resume-content">
+      <p>
+        Want to know more about my skills, experience, and projects?  
+        You can download my latest resume here 👇
+      </p>
+      <a href="" download class="download-btn">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+    </div>
+  </div>
+</section>
+
+
     <!-- Connect Section -->
     <section id="connect">
         <h2 class="section-title">Let's Connect</h2>
@@ -1090,7 +1099,9 @@ It helps users organize, track, and prioritize daily tasks efficiently through a
             I'm always open to discussing new projects, creative ideas, or opportunities. Feel free to connect with me!
         </p>
         <div class="connect-grid">
-            <a href="https://linkedin.com" target="_blank" class="connect-card">
+            <a href="www.linkedin.com/in/
+akshat-chamoli-991298368
+" target="_blank" class="connect-card">
                 <i class="fab fa-linkedin"></i>
                 <h3>LinkedIn</h3>
                 <p>Professional Network</p>
@@ -1105,7 +1116,7 @@ It helps users organize, track, and prioritize daily tasks efficiently through a
                 <h3>Naukri.com</h3>
                 <p>Career Profile</p>
             </a>
-            <a href="https://r.search.yahoo.com/_ylt=AwrPrXw8ROdo_gEA2F27HAx.;_ylu=Y29sbwNzZzMEcG9zAzIEdnRpZAMEc2VjA3Ny/RV=2/RE=1761196349/RO=10/RU=https%3a%2f%2fmail.google.com%2fmail%3fhl%3den/RK=2/RS=cO9Cg6ML8Ku15M9cko2voHVZYcE-" class="connect-card">
+            <a href="achamoli651@gmail.com" class="connect-card">
                 <i class="fas fa-envelope"></i>
                 <h3>Email</h3>
                 <p>Direct Contact</p>
@@ -1171,43 +1182,5 @@ It helps users organize, track, and prioritize daily tasks efficiently through a
             });
         }
     </script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 </body>
 </html>
